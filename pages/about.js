@@ -1,15 +1,13 @@
-import Head from 'next/head'
+import  Head from 'next/head';
 import Navbar from '../components/Navbar'
-import FoodList from '../components/FoodList'
 
-export default function Home() {
-  return (  
+const About = () => {
+  return (
     <>
       <Head>
-        <title>Ninja Food | Home</title>
+        <title>Ninja Food | About</title>
       </Head> 
       <div className="text-gray-500 font-body">
-
         <div className="grid md:grid-cols-3">
           <div className="md:col-span-1 md:flex md:justify-end">
             <Navbar />
@@ -22,18 +20,16 @@ export default function Home() {
             </div>
 
             <header>
-              <h2 className="text-gray-700 text-6xl font-semibold">Recipes</h2>
-              <h3 className="text-2xl font-semibold">For Ninjas</h3>
+              <h2 className="text-gray-700 text-6xl font-semibold">About</h2>
+              <h3 className="text-2xl font-semibold">Ninjas</h3>
             </header>
 
-            <FoodList />
-
-            <div className="mt-12 flex justify-center">
-              <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transition ease-out duration-300 transform hover:scale-125 hover:bg-opacity-50">Load more</div>
-            </div>    
           </main>
         </div>
+
       </div>
     </>
   )
 }
+
+export default About;
